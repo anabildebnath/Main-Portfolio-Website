@@ -2,6 +2,9 @@
   font-family: "Hind", sans-serif;
   box-sizing: border-box;
 }
+.container {
+  margin-top: 0;
+}
 img {
   height: 24px;
   width: 24px;
@@ -21,6 +24,17 @@ img {
   margin-left: 11vw;
   margin-right: 11vw;
   margin-top: 6vh;
+  margin-bottom: 10vh;
+  min-width: 768px;
+  z-index: 10;
+  animation: expand 0.8s ease forwards;
+  position: relative;
+  transition: all 0.8s ease;
+}
+.nav-title {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
 }
 h1 {
   font-weight: light;
@@ -28,21 +42,83 @@ h1 {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.nav-btn {
+.nav {
   display: flex;
 }
-.nav-btn button {
-  padding: 1rem;
+.late {
+  animation: expand .8s ease forwards;
+  position: relative;
+  transition: all 1s ease;
+}
+.title-bar {
+  animation: expand 0.8s ease forwards;
+  position: relative;
+  transition: all 0.8s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.btn button {
   border: 0 solid #e5e7eb;
   background-color: transparent;
+  border-radius: 4px;
+  margin: 8px;
+  font-size: 16px;
 }
-.nav-btn button:hover {
-  transform: scale(1.2);
+.btn button:hover {
+  transform: scale(1.1);
+  transition: all ease-out;
   transition-duration: 0.3s;
+  background-color: #e5e7eb9f;
 }
-.project-header {
+.header {
   margin-bottom: 3rem;
   margin-top: 2rem;
+  font-size: 24px;
+}
+.header2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.header3 {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+  line-height: 1.25rem;
+}
+.header4 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.header5 {
+  opacity: 0.7;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .projects-col {
   display: flex;
@@ -53,4 +129,23 @@ h1 {
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
+.gradient-circle {
+  top: -30px;
+  height: 40px;
+}
 
+.gradient-circle,
+.gradient-circle-bottom {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  width: 100vw;
+  opacity: 0.5;
+  filter: blur(35px);
+  background: radial-gradient(circle, #ec5fd2 0, rgba(108, 108, 250, 0.8) 100%);
+}
+
+.title h1 {
+  margin-bottom: 5rem;
+  font-size: 90px;
+}
