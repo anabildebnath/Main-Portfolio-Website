@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="icon" href="images/log.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="background">
@@ -20,11 +25,15 @@
         <div class="navigation-bar alignment">
           <h1 class="nav-title">Anabil Debnath</h1>
           <div class="nav btn">
-            <button class="btn-projects ease-out">Projects</button>
+            <button onclick="scrollToProject()" class="btn-projects ease-out">
+              Projects
+            </button>
             <button class="btn-about ease-out">About</button>
             <button class="btn-about ease-out">Open Source Contribution</button>
             <button class="resume ease-out">Resume</button>
-            <button class="btn-contact ease-out">Contact</button>
+            <button onclick="scrollToContact()" class="btn-contact ease-out">
+              Contact
+            </button>
             <button class="btn-theme-light ease-out">
               <img src="images/sun.svg" alt="" />
             </button>
@@ -37,12 +46,28 @@
             <h1 class="late">I'm Anabil Debnath</h1>
           </div>
           <div class="links btn">
-            <button>Github</button>
-            <button>LinkedIn</button>
-            <button>Email</button>
-            <button>StopStalk</button>
-            <button>Codeforces</button>
-            <button>Instagram</button>
+            <a href="https://github.com/anabildebnath" target="_blank">
+              <button>Github</button></a
+            >
+            <a
+              href="https://www.linkedin.com/in/anabil-debnath-4956b0219/"
+              target="_blank"
+              ><button>LinkedIn</button></a
+            >
+
+            <button onclick="openMail()">Email</button>
+
+            <a
+              href="https://www.stopstalk.com/user/profile/anabil_debnath"
+              target="_blank"
+              ><button>StopStalk</button></a
+            >
+            <a href="https://codeforces.com/profile/draghima" target="_blank"
+              ><button>Codeforces</button></a
+            >
+            <a href="https://www.instagram.com/anabildebnath/" target="_blank"
+              ><button>Instagram</button></a
+            >
           </div>
         </div>
 
@@ -89,7 +114,7 @@
           <div class="projects-col">
             <div class="projects-row">
               <h1 class="header2">Projects</h1>
-              <p class="header3">Web,Andriod and ios Applications </p>
+              <p class="header3">Web,Andriod and ios Applications</p>
             </div>
             <div class="projects-row">
               <h1 class="header4">
@@ -97,16 +122,14 @@
               </h1>
               <ul class="header5">
                 <li>Used HTML,CSS,JS,SQL to build projects from scratch</li>
-                <li>
-                  Developed games in JAVA
-                </li>
+                <li>Developed games in JAVA</li>
                 <li>For andriod and ios development used Flutter</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="projects alignment">
+        <div class="projects alignment" id="targetProject">
           <h1 class="header">Porjects</h1>
 
           <div class="grid-container">
@@ -169,46 +192,107 @@
           <div class="grid-container">
             <div class="projects-grid">
               <a
-                href="https://github.com/anabildebnath/SOLO_RANKING"
+                href="https://github.com/anabildebnath/Primary-School-Book-Distribution-System"
                 target="_blank"
               >
                 <img
                   class="projects-img"
-                  src="images/solo-ranking.avif"
+                  src="images/book-dist.jpg"
                   alt=""
                   srcset=""
               /></a>
 
-              <h1 class="header6">Solo ranking</h1>
-              <p class="header7">This is a game developed in java.</p>
+              <h1 class="header6">School Book Distribution System</h1>
+              <p class="header7">
+                This is a custom web app for book distribution management in
+                government schools.
+              </p>
             </div>
 
             <div class="projects-grid">
-              <a
-                href="https://github.com/anabildebnath/to-do-main"
-                target="_blank"
+              <a href="https://github.com/anabildebnath" target="_blank"
                 ><img
                   class="projects-img"
-                  src="images/to-do-list.png"
+                  src="images/space-game.png"
                   alt=""
                   srcset=""
               /></a>
 
-              <h1 class="header6">To Do List</h1>
+              <h1 class="header6">Space Shooting Game</h1>
               <p class="header7">
-                This is a web application for making to-do lists.
+                Developed in my 1st year of undergrad by python, a space
+                shooting game where I implemented OOP concepts.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="problems"></div>
-        <div class="research"></div>
-        <div class="about"></div>
-        <div class="contact">
-          <div class="contact-title"></div>
-          <div class="contact-links"></div>
-          <div class="name-home"></div>
+        <div class="projects alignment" id="targetAbout">
+          <h1 class="header">ABOUT</h1>
+          <div class="about header">
+            <p>
+              Collaboration is paramount in my work ethos. Drawing from my
+              experience as a Software Engineer, I've learned the immense value
+              of a well-coordinated team. Whether it's optimizing database
+              queries or architecting innovative solutions, the power of
+              collective thinking is evident. My teaching role at university,
+              where knowledge sharing is fundamental, has further underscored
+              the significance of teamwork. I've excelled in teams that embrace
+              collaboration, innovation, learning, and efficiency. These
+              qualities are essential for adaptability as we collectively strive
+              to achieve our goals.
+            </p>
+          </div>
+        </div>
+
+        <div class="last-div alignment" id="targetContact">
+          <div class="grid-container">
+            <div class="projects-grid">
+              <h1 class="header">Contact</h1>
+              <div class="title">
+                <h1 class="early">LET'S WORK</h1>
+                <h1 class="late">TOGETHER</h1>
+              </div>
+
+              <div class="links btn">
+                <a href="https://github.com/anabildebnath" target="_blank">
+                  <button>Github</button></a
+                >
+                <a
+                  href="https://www.linkedin.com/in/anabil-debnath-4956b0219/"
+                  target="_blank"
+                  ><button>LinkedIn</button></a
+                >
+
+                <button onclick="openMail()">Email</button>
+
+                <a
+                  href="https://www.stopstalk.com/user/profile/anabil_debnath"
+                  target="_blank"
+                  ><button>StopStalk</button></a
+                >
+                <a
+                  href="https://codeforces.com/profile/draghima"
+                  target="_blank"
+                  ><button>Codeforces</button></a
+                >
+                <a
+                  href="https://www.instagram.com/anabildebnath/"
+                  target="_blank"
+                  ><button>Instagram</button></a
+                >
+              </div>
+            </div>
+            <div class="projects-grid">
+              <span
+                class="material-symbols-outlined alignment"
+                id="scrollToTopBtn"
+                onclick="scrollToTop()"
+              >
+                arrow_upward
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

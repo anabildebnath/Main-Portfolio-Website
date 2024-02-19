@@ -2,6 +2,9 @@
   font-family: "Hind", sans-serif;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 .container {
   margin-top: 0;
 }
@@ -14,7 +17,7 @@ img {
   margin-right: 11vw;
   margin-top: 6vh;
 }
-.projects-row{
+.projects-row {
   min-width: 658px;
 }
 .navigation-bar {
@@ -111,8 +114,6 @@ h1 {
   background-color: #e5e7eb9f;
 }
 .header {
-  margin-bottom: 3rem;
-  margin-top: 2rem;
   font-size: 24px;
 }
 .header2 {
@@ -178,11 +179,17 @@ h1 {
   margin-bottom: 5rem;
   font-size: 90px;
 }
+.projects {
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 150px;
-  margin-top: auto;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .projects-grid img {
@@ -208,3 +215,41 @@ h1 {
   transition: all ease-out;
   transition-duration: 0.3s;
 }
+.about {
+  max-width: 65%;
+  padding: 0;
+  margin: 0;
+}
+.last-div
+{
+  position: relative;
+}
+#scrollToTopBtn {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px; /* Add margin for spacing if needed */
+  padding: 10px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+#scrollToTopBtn:hover {
+  transform: scale(1.1);
+  transition: all ease-out;
+  transition-duration: 0.3s;
+  background-color: #e5e7eb9f;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
