@@ -2,7 +2,7 @@
   font-family: "Hind", sans-serif;
   box-sizing: border-box;
 }
-body,.btn {
+body,.btn,.navigation-bar {
   overflow-x: hidden;
   transition: background-color 0s, color 0.01s ease;
 }
@@ -28,7 +28,6 @@ img {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: white;
   margin-left: 11vw;
   margin-right: 11vw;
   margin-top: 6vh;
@@ -283,7 +282,7 @@ h1 {
 }
 .light-mode .navigation-bar {
 
-  background-color:white;
+  background-color:transparent;
 }
 
 .dark-mode .navigation-bar {
