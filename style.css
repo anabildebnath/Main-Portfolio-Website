@@ -2,7 +2,9 @@
   font-family: "Hind", sans-serif;
   box-sizing: border-box;
 }
-body,.btn,.navigation-bar {
+body,
+.btn,
+.navigation-bar {
   overflow-x: hidden;
   transition: background-color 0s, color 0.01s ease;
 }
@@ -50,7 +52,6 @@ h1 {
 }
 .nav {
   display: flex;
-
 }
 .late {
   animation: secondAnimation 0.8s ease 1.5s forwards;
@@ -58,6 +59,7 @@ h1 {
   transition: all 1s ease;
   visibility: hidden;
 }
+
 .early,
 .links {
   animation: expand 0.8s ease forwards;
@@ -65,7 +67,30 @@ h1 {
   transition: all 0.8s ease;
 }
 
+.late2{
+  visibility: hidden;
+}
+
+.animate {
+  animation: secondAnimation 0.8s ease 1.5s forwards;
+  position: relative;
+  transition: all 1s ease;
+  visibility: hidden;
+}
+
 @keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* @keyframes slideIn {
   0% {
     transform: translateX(500px) scale(0.2);
   }
@@ -81,7 +106,7 @@ h1 {
   100% {
     transform: translateY(0px);
   }
-}
+} */
 
 @keyframes expand {
   0% {
@@ -180,6 +205,13 @@ h1 {
   margin-bottom: 5rem;
   font-size: 90px;
 }
+.title-flex {
+  display: flex;
+}
+.title-flex img {
+  height: 340px;
+  width: 620px;
+}
 .projects {
   margin-bottom: 10rem;
   display: flex;
@@ -191,6 +223,15 @@ h1 {
   gap: 150px;
   margin-top: 4rem;
   margin-bottom: 3rem;
+}
+
+.projects-svg {
+  display: flex;
+  flex-direction: row;
+}
+.projects-svg img {
+  height: 340px;
+  width: 620px;
 }
 
 .projects-grid img {
@@ -223,13 +264,21 @@ h1 {
 }
 .last-div {
   position: relative;
+  display: flex;
 }
+.projects-grid .last-img {
+  height: 500px;
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
 #scrollToTopBtn {
   display: none;
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 20px; /* Add margin for spacing if needed */
+  margin: 20px;
   padding: 10px;
   color: black;
   border: none;
@@ -259,32 +308,37 @@ h1 {
   color: #ffffff;
 }
 .light-mode #darkModeIcon::before {
-  content: '\f186'; 
+  content: "\f186";
 }
 
 .dark-mode #darkModeIcon::before {
-   content: '\f185';
+  content: "\f185";
 }
 
 .light-mode button {
-  color: #000000; 
+  color: #000000;
 }
 
-.dark-mode button{
+.dark-mode button {
   color: #ffffff;
 }
 .light-mode span {
-  color: #000000; 
+  color: #000000;
 }
 
 .dark-mode span {
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 .light-mode .navigation-bar {
-
-  background-color:transparent;
+  background-color: transparent;
 }
 
 .dark-mode .navigation-bar {
-  background-color:transparent;
+  background-color: transparent;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
