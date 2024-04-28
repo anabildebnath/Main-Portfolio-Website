@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -28,8 +29,21 @@
     <script src="script.js"></script>
   </head>
   <body class="light-mode">
+    <div class="arrow">
+      <span
+        class="material-symbols-outlined alignment"
+        id="scrollToTopBtn"
+        onclick="scrollToTop()"
+        style="display: none"
+      >
+        arrow_upward
+      </span>
+    </div>
+
     <div class="background">
+      <!-- This section creates the top gradient color effect which is styled in css file -->
       <div class="gradient-circle"></div>
+
       <div class="container">
         <div class="navigation-bar alignment">
           <h1 class="nav-title">Anabil Debnath</h1>
@@ -53,9 +67,19 @@
         </div>
 
         <div class="title-bar alignment">
-          <div class="title">
-            <h1 class="early">Hello 👋</h1>
-            <h1 class="late">I'm Anabil Debnath</h1>
+          <div class="title-flex">
+            <div class="title">
+              <h1 class="early">Hello 👋</h1>
+              <h1 class="late">I'm Anabil</h1>
+              <h1 class="late">Debnath</h1>
+
+            </div>
+            <img
+              src="/images/tech profile 1.svg"
+              alt=""
+              srcset=""
+              class="late"
+            />
           </div>
           <div class="links btn">
             <a href="https://github.com/anabildebnath" target="_blank">
@@ -77,7 +101,7 @@
             <a href="https://codeforces.com/profile/draghima" target="_blank"
               ><button>Codeforces</button></a
             >
-            <a href="https://www.instagram.com/anabildebnath/" target="_blank"
+            <a href="https://www.instagram.com/anabildebnathabir/" target="_blank"
               ><button>Instagram</button></a
             >
           </div>
@@ -98,10 +122,10 @@
               <ul class="header5">
                 <li>
                   Maintained an above average CGPA througout my undergrad,
-                  attaining 3.71
+                  attaining <b> 3.7</b>
                 </li>
-                <li>Developed 10+ projects as coursework</li>
-                <li>Worked in Natural Language Processing as my thesis</li>
+                <li>Developed <b>10+</b> projects as coursework</li>
+                <li>Working with <b>Bengali.ai</b> making <b>Apsis.net</b> ocr recognizer more efficient</li>
               </ul>
             </div>
           </div>
@@ -113,12 +137,11 @@
             </div>
             <div class="projects-row">
               <h1 class="header4">
-                Solved more than 500 problems in varius online judges
+                Solved more than 1000 problems in varius online judges
               </h1>
               <ul class="header5">
-                <li>Max rating in codeforces: 1262(pupil)</li>
-                <li>Daily leetcode a</li>
-                <li>Worked in Natural Language Processing as my thesis</li>
+                <li>Max rating in codeforces: <b>1322(pupil)</b></li>
+                <li>Leveraged my problem solving experience in my <b>NLP</b> research thesis</li>
               </ul>
             </div>
           </div>
@@ -130,12 +153,12 @@
             </div>
             <div class="projects-row">
               <h1 class="header4">
-                Developed 10+ projects in popular stacks and langs
+                Developed 10+ projects in popular stacks and languages
               </h1>
               <ul class="header5">
-                <li>Used HTML,CSS,JS,SQL to build projects from scratch</li>
-                <li>Developed games in JAVA</li>
-                <li>For andriod and ios development used Flutter</li>
+                <li>Used <b>MERN</b> stack,<b> SQL, MySQL, FIREBASE</b> to build projects from scratch</li>
+                <li>Developed games in JAVA leveraging <b>OOP</b></li>
+                <li>For andriod and ios development used <b>Flutter</b></li>
               </ul>
             </div>
           </div>
@@ -239,9 +262,9 @@
           </div>
         </div>
 
-        <div class="projects alignment" id="targetAbout">
-          <h1 class="header">ABOUT</h1>
+        <div class="projects-svg alignment" id="targetAbout">
           <div class="about header">
+            <h1 class="header">ABOUT</h1>
             <p>
               "I think my two biggest strengths would be that I am a good team
               player and a fast learner. I am very passionate and driven by the
@@ -253,6 +276,7 @@
               member within a limited period of time."
             </p>
           </div>
+          <img src="/images/tech profile 4.svg" alt="" />
         </div>
 
         <div class="last-div alignment" id="targetContact">
@@ -261,9 +285,12 @@
               <h1 class="header">Contact</h1>
               <div class="title">
                 <h1 class="early">LET'S WORK</h1>
-                <h1 class="late">TOGETHER</h1>
+                <div class="late2 animationTrigger"> 
+                  <h1>TOGETHER</h1>
+                  <img src="/images/tech profile 3.svg" alt="" />
+                </div>
+          
               </div>
-
               <div class="links btn">
                 <a href="https://github.com/anabildebnath" target="_blank">
                   <button>Github</button></a
@@ -287,22 +314,14 @@
                   ><button>Codeforces</button></a
                 >
                 <a
-                  href="https://www.instagram.com/anabildebnath/"
+                  href="https://www.instagram.com/anabildebnathabir/"
                   target="_blank"
                   ><button>Instagram</button></a
                 >
               </div>
             </div>
             <div class="projects-grid">
-       
-                <span
-                  class="material-symbols-outlined alignment"
-                  id="scrollToTopBtn"
-                  onclick="scrollToTop()"
-                >
-                  arrow_upward
-                </span>
-            
+              <img src="/images/tech profile 5.svg" alt="" class="last-img" />
             </div>
           </div>
         </div>
