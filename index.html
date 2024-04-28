@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -29,6 +28,7 @@
     <script src="script.js"></script>
   </head>
   <body class="light-mode">
+    <!-- Scroll arrow button  -->
     <div class="arrow">
       <span
         class="material-symbols-outlined alignment"
@@ -40,289 +40,286 @@
       </span>
     </div>
 
-    <div class="background">
-      <!-- This section creates the top gradient color effect which is styled in css file -->
-      <div class="gradient-circle"></div>
+    <!-- This section creates the top gradient color effect which is styled in css file -->
+    <div class="gradient-circle"></div>
 
-      <div class="container">
-        <div class="navigation-bar alignment">
-          <h1 class="nav-title">Anabil Debnath</h1>
+    <div class="container">
+      <div class="navigation-bar alignment">
+        <a href="https://www.youtube.com/watch?v=b9o_CQS2h9M" target="_blank">
+          <h1 class="nav-title">The human condition forces you to think, don't kill your instincts</h1>
+        </a>
 
-          <div class="nav btn">
-            <button onclick="scrollToProject()" class="btn-projects ease-out">
-              Projects
-            </button>
-            <button onclick="scrollToAbout()" class="btn-about ease-out">
-              About
-            </button>
-            <button class="btn-about ease-out">Open Source Contribution</button>
-            <button class="resume ease-out">Resume</button>
-            <button onclick="scrollToContact()" class="btn-contact ease-out">
-              Contact
-            </button>
-            <button id="darkModeToggle" class="light-mode">
-              <i id="darkModeIcon" class="fas fa-sun"></i>
-            </button>
+        <div class="nav btn">
+          <button onclick="scrollToProject()" class="btn-projects ease-out">
+            Projects
+          </button>
+          <button onclick="scrollToAbout()" class="btn-about ease-out">
+            About
+          </button>
+          <button class="btn-about ease-out">Open Source Contribution</button>
+          <button class="resume ease-out">Resume</button>
+          <button onclick="scrollToContact()" class="btn-contact ease-out">
+            Contact
+          </button>
+          <button id="darkModeToggle" class="light-mode">
+            <i id="darkModeIcon" class="fas fa-sun"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="title-bar alignment">
+        <div class="title-flex">
+          <div class="title">
+            <h1 class="early">Hello 👋</h1>
+            <h1 class="late">I'm Anabil Debnath</h1>
+          </div>
+          <img src="/images/tech profile 1.svg" alt="" srcset="" class="late" />
+        </div>
+        <div class="links btn">
+          <a href="https://github.com/anabildebnath" target="_blank">
+            <button>Github</button></a
+          >
+          <a
+            href="https://www.linkedin.com/in/anabil-debnath-4956b0219/"
+            target="_blank"
+            ><button>LinkedIn</button></a
+          >
+
+          <button onclick="openMail()">Email</button>
+
+          <a
+            href="https://www.stopstalk.com/user/profile/anabil_debnath"
+            target="_blank"
+            ><button>StopStalk</button></a
+          >
+          <a href="https://codeforces.com/profile/draghima" target="_blank"
+            ><button>Codeforces</button></a
+          >
+          <a href="https://www.instagram.com/anabildebnathabir/" target="_blank"
+            ><button>Instagram</button></a
+          >
+        </div>
+      </div>
+
+      <div class="projects alignment">
+        <h1 class="header">Education & Qualifications</h1>
+
+        <div class="projects-col">
+          <div class="projects-row">
+            <h1 class="header2">Software Engineering</h1>
+            <p class="header3">SUST(B.Sc undergrad)</p>
+          </div>
+          <div class="projects-row">
+            <h1 class="header4">Completing my Bachelor of Science from SUST</h1>
+            <ul class="header5">
+              <li>
+                Maintained an above average CGPA througout my undergrad,
+                attaining <b> 3.7</b>
+              </li>
+              <li>Developed <b>10+</b> projects as coursework</li>
+              <li>
+                Working with <b>Bengali.ai</b> making <b>Apsis.net</b> ocr
+                recognizer more efficient
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="title-bar alignment">
-          <div class="title-flex">
-            <div class="title">
-              <h1 class="early">Hello 👋</h1>
-              <h1 class="late">I'm Anabil</h1>
-              <h1 class="late">Debnath</h1>
-
-            </div>
-            <img
-              src="/images/tech profile 1.svg"
-              alt=""
-              srcset=""
-              class="late"
-            />
+        <div class="projects-col">
+          <div class="projects-row">
+            <h1 class="header2">Problem Solving</h1>
+            <p class="header3">Data Structures and Alogorithm based</p>
           </div>
-          <div class="links btn">
-            <a href="https://github.com/anabildebnath" target="_blank">
-              <button>Github</button></a
-            >
-            <a
-              href="https://www.linkedin.com/in/anabil-debnath-4956b0219/"
-              target="_blank"
-              ><button>LinkedIn</button></a
-            >
-
-            <button onclick="openMail()">Email</button>
-
-            <a
-              href="https://www.stopstalk.com/user/profile/anabil_debnath"
-              target="_blank"
-              ><button>StopStalk</button></a
-            >
-            <a href="https://codeforces.com/profile/draghima" target="_blank"
-              ><button>Codeforces</button></a
-            >
-            <a href="https://www.instagram.com/anabildebnathabir/" target="_blank"
-              ><button>Instagram</button></a
-            >
+          <div class="projects-row">
+            <h1 class="header4">
+              Solved more than 1000 problems in varius online judges
+            </h1>
+            <ul class="header5">
+              <li>Max rating in codeforces: <b>1322(pupil)</b></li>
+              <li>
+                Leveraged my problem solving experience in my
+                <b>NLP</b> research thesis
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="projects alignment">
-          <h1 class="header">Education & Qualifications</h1>
-
-          <div class="projects-col">
-            <div class="projects-row">
-              <h1 class="header2">Software Engineering</h1>
-              <p class="header3">SUST(B.Sc undergrad)</p>
-            </div>
-            <div class="projects-row">
-              <h1 class="header4">
-                Completing my Bachelor of Science from SUST
-              </h1>
-              <ul class="header5">
-                <li>
-                  Maintained an above average CGPA througout my undergrad,
-                  attaining <b> 3.7</b>
-                </li>
-                <li>Developed <b>10+</b> projects as coursework</li>
-                <li>Working with <b>Bengali.ai</b> making <b>Apsis.net</b> ocr recognizer more efficient</li>
-              </ul>
-            </div>
+        <div class="projects-col">
+          <div class="projects-row">
+            <h1 class="header2">Projects</h1>
+            <p class="header3">Web,Andriod and ios Applications</p>
           </div>
-
-          <div class="projects-col">
-            <div class="projects-row">
-              <h1 class="header2">Problem Solving</h1>
-              <p class="header3">Data Structures and Alogorithm based</p>
-            </div>
-            <div class="projects-row">
-              <h1 class="header4">
-                Solved more than 1000 problems in varius online judges
-              </h1>
-              <ul class="header5">
-                <li>Max rating in codeforces: <b>1322(pupil)</b></li>
-                <li>Leveraged my problem solving experience in my <b>NLP</b> research thesis</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="projects-col">
-            <div class="projects-row">
-              <h1 class="header2">Projects</h1>
-              <p class="header3">Web,Andriod and ios Applications</p>
-            </div>
-            <div class="projects-row">
-              <h1 class="header4">
-                Developed 10+ projects in popular stacks and languages
-              </h1>
-              <ul class="header5">
-                <li>Used <b>MERN</b> stack,<b> SQL, MySQL, FIREBASE</b> to build projects from scratch</li>
-                <li>Developed games in JAVA leveraging <b>OOP</b></li>
-                <li>For andriod and ios development used <b>Flutter</b></li>
-              </ul>
-            </div>
+          <div class="projects-row">
+            <h1 class="header4">
+              Developed 10+ projects in popular stacks and languages
+            </h1>
+            <ul class="header5">
+              <li>
+                Used <b>MERN</b> stack,<b> SQL, MySQL, FIREBASE</b> to build
+                projects from scratch
+              </li>
+              <li>Developed games in <b>JAVA</b> leveraging <b>OOP</b></li>
+              <li>For andriod and ios development used <b>Flutter</b></li>
+            </ul>
           </div>
         </div>
+      </div>
 
-        <div class="projects alignment" id="targetProject">
-          <h1 class="header">Porjects</h1>
+      <div class="projects alignment" id="targetProject">
+        <h1 class="header">Porjects</h1>
 
-          <div class="grid-container">
-            <div class="projects-grid">
-              <a
-                href="https://github.com/anabildebnath/SOLO_RANKING"
-                target="_blank"
-              >
-                <img
-                  class="projects-img"
-                  src="images/solo-ranking.avif"
-                  alt=""
-                  srcset=""
-              /></a>
-
-              <h1 class="header6">Solo ranking</h1>
-              <p class="header7">This is a game developed in java.</p>
-            </div>
-
-            <div class="projects-grid">
-              <a
-                href="https://github.com/anabildebnath/to-do-main"
-                target="_blank"
-                ><img
-                  class="projects-img"
-                  src="images/to-do-list.png"
-                  alt=""
-                  srcset=""
-              /></a>
-
-              <h1 class="header6">To Do List</h1>
-              <p class="header7">
-                This is a web application for making to-do lists.
-              </p>
-            </div>
-          </div>
-
-          <div class="projects-non-grid">
+        <div class="grid-container">
+          <div class="projects-grid">
             <a
-              href="https://github.com/anabildebnath/TicketFlutterApp"
+              href="https://github.com/anabildebnath/SOLO_RANKING"
               target="_blank"
             >
               <img
                 class="projects-img"
-                src="images/ticket-flutter.png"
+                src="images/solo-ranking.avif"
                 alt=""
                 srcset=""
-              />
-            </a>
+            /></a>
+
+            <h1 class="header6">Solo ranking</h1>
+            <p class="header7">This is a game developed in java.</p>
           </div>
 
-          <div class="projects-non-grid-title">
-            <h1 class="header6">Ticket Booking App</h1>
+          <div class="projects-grid">
+            <a
+              href="https://github.com/anabildebnath/to-do-main"
+              target="_blank"
+              ><img
+                class="projects-img"
+                src="images/to-do-list.png"
+                alt=""
+                srcset=""
+            /></a>
+
+            <h1 class="header6">To Do List</h1>
             <p class="header7">
-              This is a mobile application for booking tickets developed using
-              flutter.
+              This is a web application for making to-do lists.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects-non-grid">
+          <a
+            href="https://github.com/anabildebnath/TicketFlutterApp"
+            target="_blank"
+          >
+            <img
+              class="projects-img"
+              src="images/ticket-flutter.png"
+              alt=""
+              srcset=""
+            />
+          </a>
+        </div>
+
+        <div class="projects-non-grid-title">
+          <h1 class="header6">Ticket Booking App</h1>
+          <p class="header7">
+            This is a mobile application for booking tickets developed using
+            flutter.
+          </p>
+        </div>
+
+        <div class="grid-container">
+          <div class="projects-grid">
+            <a
+              href="https://github.com/anabildebnath/Primary-School-Book-Distribution-System"
+              target="_blank"
+            >
+              <img
+                class="projects-img"
+                src="images/book-dist.jpg"
+                alt=""
+                srcset=""
+            /></a>
+
+            <h1 class="header6">School Book Distribution System</h1>
+            <p class="header7">
+              This is a custom web app for book distribution management in
+              government schools.
             </p>
           </div>
 
-          <div class="grid-container">
-            <div class="projects-grid">
-              <a
-                href="https://github.com/anabildebnath/Primary-School-Book-Distribution-System"
-                target="_blank"
+          <div class="projects-grid">
+            <a href="https://github.com/anabildebnath" target="_blank"
+              ><img
+                class="projects-img"
+                src="images/space-game.png"
+                alt=""
+                srcset=""
+            /></a>
+
+            <h1 class="header6">Space Shooting Game</h1>
+            <p class="header7">
+              Developed in my 1st year of undergrad by python, a space shooting
+              game where I implemented OOP concepts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-svg alignment" id="targetAbout">
+        <div class="about header">
+          <h1 class="header">ABOUT</h1>
+          <p>
+            "I think my two biggest strengths would be that I am a good team
+            player and a fast learner. I am very passionate and driven by the
+            idea of advancing in my software engineering career and growing my
+            experience along with my responsibilities. Throughout my undergrad,
+            I have worked meticulously on my communication skills and management
+            experiences alongside my programming skillsets. I believe I would be
+            able to transition into a productive team member within a limited
+            period of time."
+          </p>
+        </div>
+        <img src="/images/tech profile 4.svg" alt="" />
+      </div>
+
+      <div class="last-div alignment" id="targetContact">
+        <div class="grid-container">
+          <div class="projects-grid">
+            <h1 class="header">Contact</h1>
+            <div class="title">
+              <h1 class="early">LET'S WORK</h1>
+              <div class="late2 animationTrigger">
+                <h1>TOGETHER</h1>
+                <img src="/images/tech profile 3.svg" alt="" />
+              </div>
+            </div>
+            <div class="links btn">
+              <a href="https://github.com/anabildebnath" target="_blank">
+                <button>Github</button></a
               >
-                <img
-                  class="projects-img"
-                  src="images/book-dist.jpg"
-                  alt=""
-                  srcset=""
-              /></a>
+              <a
+                href="https://www.linkedin.com/in/anabil-debnath-4956b0219/"
+                target="_blank"
+                ><button>LinkedIn</button></a
+              >
 
-              <h1 class="header6">School Book Distribution System</h1>
-              <p class="header7">
-                This is a custom web app for book distribution management in
-                government schools.
-              </p>
-            </div>
+              <button onclick="openMail()">Email</button>
 
-            <div class="projects-grid">
-              <a href="https://github.com/anabildebnath" target="_blank"
-                ><img
-                  class="projects-img"
-                  src="images/space-game.png"
-                  alt=""
-                  srcset=""
-              /></a>
-
-              <h1 class="header6">Space Shooting Game</h1>
-              <p class="header7">
-                Developed in my 1st year of undergrad by python, a space
-                shooting game where I implemented OOP concepts.
-              </p>
+              <a
+                href="https://www.stopstalk.com/user/profile/anabil_debnath"
+                target="_blank"
+                ><button>StopStalk</button></a
+              >
+              <a href="https://codeforces.com/profile/draghima" target="_blank"
+                ><button>Codeforces</button></a
+              >
+              <a
+                href="https://www.instagram.com/anabildebnathabir/"
+                target="_blank"
+                ><button>Instagram</button></a
+              >
             </div>
           </div>
-        </div>
-
-        <div class="projects-svg alignment" id="targetAbout">
-          <div class="about header">
-            <h1 class="header">ABOUT</h1>
-            <p>
-              "I think my two biggest strengths would be that I am a good team
-              player and a fast learner. I am very passionate and driven by the
-              idea of advancing in my software engineering career and growing my
-              experience along with my responsibilities. Throughout my
-              undergrad, I have worked meticulously on my communication skills
-              and management experiences alongside my programming skillsets. I
-              believe I would be able to transition into a productive team
-              member within a limited period of time."
-            </p>
-          </div>
-          <img src="/images/tech profile 4.svg" alt="" />
-        </div>
-
-        <div class="last-div alignment" id="targetContact">
-          <div class="grid-container">
-            <div class="projects-grid">
-              <h1 class="header">Contact</h1>
-              <div class="title">
-                <h1 class="early">LET'S WORK</h1>
-                <div class="late2 animationTrigger"> 
-                  <h1>TOGETHER</h1>
-                  <img src="/images/tech profile 3.svg" alt="" />
-                </div>
-          
-              </div>
-              <div class="links btn">
-                <a href="https://github.com/anabildebnath" target="_blank">
-                  <button>Github</button></a
-                >
-                <a
-                  href="https://www.linkedin.com/in/anabil-debnath-4956b0219/"
-                  target="_blank"
-                  ><button>LinkedIn</button></a
-                >
-
-                <button onclick="openMail()">Email</button>
-
-                <a
-                  href="https://www.stopstalk.com/user/profile/anabil_debnath"
-                  target="_blank"
-                  ><button>StopStalk</button></a
-                >
-                <a
-                  href="https://codeforces.com/profile/draghima"
-                  target="_blank"
-                  ><button>Codeforces</button></a
-                >
-                <a
-                  href="https://www.instagram.com/anabildebnathabir/"
-                  target="_blank"
-                  ><button>Instagram</button></a
-                >
-              </div>
-            </div>
-            <div class="projects-grid">
-              <img src="/images/tech profile 5.svg" alt="" class="last-img" />
-            </div>
+          <div class="projects-grid">
+            <img src="/images/tech profile 5.svg" alt="" class="last-img" />
           </div>
         </div>
       </div>

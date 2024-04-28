@@ -46,35 +46,59 @@ window.onscroll = function () {
   }
 };
 
+//Theme mode
 document.addEventListener("DOMContentLoaded", function () {
+  //Taking two variables for id of the theme button and body
   const darkModeToggle = document.getElementById("darkModeToggle");
   const body = document.body;
 
+  //Now listening to the click, once clicked the body variable is passed in toggleMode function
   darkModeToggle.addEventListener("click", function () {
-    body.classList.toggle("light-mode");
-    body.classList.toggle("dark-mode");
+    toggleMode(body);
   });
-});
 
+  // Function to toggle the mode, every click will invoke the alternative theme
+  function toggleMode(bodyElement) {
+    bodyElement.classList.toggle("light-mode");
+    bodyElement.classList.toggle("dark-mode");
+
+    // Storing the current mode in local storage, so that after reload the theme remains the same
+    const mode = bodyElement.classList.contains("light-mode")
+      ? "light"
+      : "dark";
+    localStorage.setItem("themeMode", mode);
+  }
+
+  // Checking local storage for theme mode
+  const savedMode = localStorage.getItem("themeMode");
+  if (savedMode) {
+    // Removing existing mode classes to prevent both classes from being applied
+    body.classList.remove("light-mode", "dark-mode");
+
+    // Applying the saved mode class to the body
+    body.classList.add(savedMode + "-mode");
+  }
+});
 
 function isInViewport(element) {
   var bounding = element.getBoundingClientRect();
   return (
     bounding.top >= 0 &&
     bounding.left >= 0 &&
-    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    bounding.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    bounding.right <=
+      (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 
 function handleAnimation() {
-  var animationElement = document.querySelector('.animationTrigger');
+  var animationElement = document.querySelector(".animationTrigger");
 
   if (isInViewport(animationElement)) {
-    animationElement.classList.add('animate');
+    animationElement.classList.add("animate");
   }
 }
 
-window.addEventListener('scroll', handleAnimation);
-window.addEventListener('load', handleAnimation);
-
+window.addEventListener("scroll", handleAnimation);
+window.addEventListener("load", handleAnimation);
