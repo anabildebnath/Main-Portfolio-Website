@@ -12,7 +12,7 @@ function scrollToContact() {
 }
 
 function openMail() {
-  window.open("mailto: anabildebnath16@gmail.com");
+  window.open("mailto:anabildebnath16@gmail.com");
 }
 
 //This function creates a scroll point by clicking which we can get to the very top at our website

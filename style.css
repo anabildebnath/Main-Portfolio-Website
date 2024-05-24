@@ -23,8 +23,22 @@ body,
   animation: expand 0.8s ease forwards;
   transition: all 0.8s ease;
 }
-a {
+.links a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 4rem;
+  padding-top: 9px;
+
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  transform: scale(1.08);
+  transition: all ease-out;
+  transition-duration: 0.3s;
 }
 .nav-title {
   font-size: 0.8vw;
@@ -47,7 +61,13 @@ a {
   transition: all 1s ease;
   visibility: hidden;
 }
-
+.links{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  overflow: hidden;
+}
 .early,
 .links {
   animation: expand 0.8s ease forwards;
@@ -55,8 +75,19 @@ a {
   transition: all 0.8s ease;
 }
 
+.links a img{
+  width: 30px;
+}
+
 .late2 {
   visibility: hidden;
+}
+
+.btn button {
+  border: 0 solid #e5e7eb;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .animate {
@@ -95,19 +126,6 @@ a {
   }
 }
 
-.btn button {
-  border: 0 solid #e5e7eb;
-  background-color: transparent;
-  border-radius: 4px;
-  margin: 8px;
-  font-size: 16px;
-}
-.btn button:hover {
-  transform: scale(1.1);
-  transition: all ease-out;
-  transition-duration: 0.3s;
-  background-color: #e5e7eb9f;
-}
 .header {
   font-size: 24px;
 }
@@ -145,6 +163,14 @@ a {
   opacity: 0.5;
   margin: 0;
 }
+.header8 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 0;
+  color: rgb(148, 144, 144);
+}
+
 .projects-col {
   display: flex;
   justify-content: space-between;
@@ -184,10 +210,23 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 150px;
-  margin-top: 4rem;
+  padding-top: 4rem;
   margin-bottom: 3rem;
+  border-top:.5px solid #f0ecec;
 }
-
+.grid-icons-row{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.grid-icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects-non-grid-title .grid-icons img{
+  width: 30px;
+}
 .projects-svg {
   display: flex;
   flex-direction: row;
@@ -206,6 +245,11 @@ a {
   width: 100%;
   height: auto;
 }
+.projects-non-grid img{
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+}
 .projects-non-grid {
   margin-top: 100px;
 }
@@ -214,6 +258,7 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 10rem;
 }
 .projects-img:hover {
   transform: scale(1.02);

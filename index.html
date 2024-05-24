@@ -46,7 +46,9 @@
     <div class="container">
       <div class="navigation-bar alignment">
         <a href="https://www.youtube.com/watch?v=b9o_CQS2h9M" target="_blank">
-          <h1 class="nav-title">The human condition forces you to think, don't kill your instincts</h1>
+          <h1 class="nav-title">
+            The human condition forces you to think, don't kill your instincts
+          </h1>
         </a>
 
         <div class="nav btn">
@@ -75,32 +77,51 @@
           </div>
           <img src="/images/tech profile 1.svg" alt="" srcset="" class="late" />
         </div>
+
+        <!-- button links at top  -->
         <div class="links btn">
           <a href="https://github.com/anabildebnath" target="_blank">
+            <img src="./images/github.svg" alt="" />
             <button>Github</button></a
           >
           <a
             href="https://www.linkedin.com/in/anabil-debnath-4956b0219/"
             target="_blank"
-            ><button>LinkedIn</button></a
           >
-
-          <button onclick="openMail()">Email</button>
+            <img src="./images/linkedin.svg" alt="" />
+            <button>LinkedIn</button></a
+          >
+          <a target="_blank" onclick="openMail()">
+            <img src="./images/gmail.svg" alt="" />
+            <button>Email</button>
+          </a>
 
           <a
             href="https://www.stopstalk.com/user/profile/anabil_debnath"
             target="_blank"
-            ><button>StopStalk</button></a
           >
-          <a href="https://codeforces.com/profile/draghima" target="_blank"
-            ><button>Codeforces</button></a
+            <img src="./images/stopstalk.svg" alt="" />
+            <button>StopStalk</button></a
           >
-          <a href="https://www.instagram.com/anabildebnathabir/" target="_blank"
-            ><button>Instagram</button></a
+          <a href="https://codeforces.com/profile/draghima" target="_blank">
+            <img src="./images/codeforces.svg" alt="" />
+            <button>Codeforces</button>
+          </a>
+          <a href="https://leetcode.com/u/DRAGHIMA/" target="_blank">
+            <img src="./images/leetcode.svg" alt="" />
+            <button>Leetcode</button>
+          </a>
+          <a
+            href="https://www.instagram.com/anabildebnathabir/"
+            target="_blank"
+          >
+            <img src="./images/instagram.svg" alt="instagram" />
+            <button>Instagram</button></a
           >
         </div>
       </div>
 
+      <!-- Education and profile description  -->
       <div class="projects alignment">
         <h1 class="header">Education & Qualifications</h1>
 
@@ -165,10 +186,181 @@
         </div>
       </div>
 
+      <!-- Projects -->
       <div class="projects alignment" id="targetProject">
         <h1 class="header">Porjects</h1>
 
+        <!-- swequizer  -->
+        <div class="projects-non-grid">
+          <a href="https://swequizer.netlify.app/login" target="_blank">
+            <img
+              class="projects-img"
+              src="images/swequizer.png"
+              alt="swequizer"
+            />
+          </a>
+        </div>
+
+        <div class="projects-non-grid-title">
+          <h1 class="header6">SWE Quizer</h1>
+
+          <div class="grid-icons-row">
+            <div class="grid-icons">
+              <img src="./images/react.svg" alt="" />
+              <p class="header4">REACT</p>
+            </div>
+            <div class="grid-icons">
+              <img src="./images/firebase.svg" alt="" />
+              <p class="header4">Firebase</p>
+            </div>
+            <div class="grid-icons">
+              <img src="./images/css.svg" alt="" />
+              <p class="header4">CSS</p>
+            </div>
+          </div>
+          <p class="header7">
+            Github:
+            <a
+              href="https://github.com/anabildebnath/TicketFlutterApp"
+              target="_blank"
+              >SweQuizer's repository</a
+            >
+          </p>
+          <ul>
+            <li>
+              <p class="header8">
+                Used
+                <span style="color: rgb(20, 2, 2)">React </span>.js
+                <span style="color: rgb(20, 2, 2)">state management </span>
+                libraries and <span style="color: rgb(20, 2, 2)">hooks </span>to
+                build a term test web application
+              </p>
+            </li>
+            <li>
+              <p class="header8">
+                Signup/Login is implemented through
+                <span style="color: rgb(20, 2, 2)">Firebase’s</span>
+                authentication
+                <span style="color: rgb(20, 2, 2)">API</span>
+                integration
+              </p>
+            </li>
+
+            <li>
+              <p class="header8">
+                Implemented Firebase’s authentication system to integrate
+                <span style="color: rgb(20, 2, 2)">Google</span> and also
+                <span style="color: rgb(20, 2, 2)">Github</span> login using
+                GitHub Apps
+              </p>
+            </li>
+            <li>
+              <p class="header8">
+                Structured a
+                <span style="color: rgb(20, 2, 2)">JSON</span> formatted file to
+                fetch data using Firebase’s
+                <span style="color: rgb(20, 2, 2)">Realtime Database</span>
+                and
+                <span style="color: rgb(20, 2, 2)">Firestore</span> and
+                extensive use of
+                <span style="color: rgb(20, 2, 2)">CSS</span> resulted in
+                visually captivating UI
+              </p>
+            </li>
+          </ul>
+       
+        </div>
+
+        <!-- primary school book distribution  -->
+        <div class="projects-non-grid">
+          <a href="https://project350-rust.vercel.app/" target="_blank">
+            <img
+              class="projects-img"
+              src="images/book-dist.jpg"
+              alt="Primary-School-Book-Distribution-System"
+            />
+          </a>
+        </div>
+
+        <div class="projects-non-grid-title">
+          <h1 class="header6">Primary School Book Distribution System</h1>
+
+          <div class="grid-icons-row">
+            <div class="grid-icons">
+              <img src="./images/node.svg" alt="" />
+              <p class="header4">Node</p>
+            </div>
+            <div class="grid-icons">
+              <img src="./images/express.svg" alt="" />
+              <p class="header4">Express</p>
+            </div>
+            <div class="grid-icons">
+              <img src="./images/mongodb.svg" alt="" />
+              <p class="header4">MongoDB</p>
+            </div>
+            <div class="grid-icons">
+              <img src="./images/mysql.svg" alt="" />
+              <p class="header4">MySQL</p>
+            </div>
+            <div class="grid-icons">
+              <img src="./images/html.svg" alt="" />
+              <p class="header4">Html</p>
+            </div>
+            <div class="grid-icons">
+              <img src="./images/css.svg" alt="" />
+              <p class="header4">CSS</p>
+            </div>
+          </div>
+          <p class="header7">
+            Github:
+            <a
+              href="https://github.com/anabildebnath/Primary-School-Book-Distribution-System-Vercel"
+              target="_blank"
+              >Primary School Book Distribution System's repository</a
+            >
+          </p>
+          <ul>
+            <li>
+              <p class="header8">
+                Group coursework, primarily using
+                <span style="color: rgb(20, 2, 2)">Node.js</span> ,
+                <span style="color: rgb(20, 2, 2)">JavaScript</span>,
+                <span style="color: rgb(20, 2, 2)">MySql</span> and then later
+                on shifted to
+                <span style="color: rgb(20, 2, 2)">MongoDB</span> using
+                <span style="color: rgb(20, 2, 2)">NoSql</span> queries
+              </p>
+            </li>
+            <li>
+              <p class="header8">
+                Initially used
+                <span style="color: rgb(20, 2, 2)">MySql</span> to implement the
+                database queries and structures, used
+                <span style="color: rgb(20, 2, 2)">Xampp</span> for managing
+                local server environment and testing the database
+              </p>
+            </li>
+
+            <li>
+              <p class="header8">
+                Used
+                <span style="color: rgb(20, 2, 2)">Vanilla Html</span>,<span
+                  style="color: rgb(20, 2, 2)"
+                  >Css</span
+                >
+                which created problems like redundancies, duplicacy, code debt
+                and unmanageable for scaling; hence chose
+                <span style="color: rgb(20, 2, 2)">React.js</span> for my
+                upcoming projects
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- double grid- solo-ranking & to do list  -->
         <div class="grid-container">
+
+          <!-- SOLO_RANKING -->
           <div class="projects-grid">
             <a
               href="https://github.com/anabildebnath/SOLO_RANKING"
@@ -181,14 +373,29 @@
                 srcset=""
             /></a>
 
-            <h1 class="header6">Solo ranking</h1>
-            <p class="header7">This is a game developed in java.</p>
+            <div class="projects-non-grid-title">
+              <h1 class="header6">Solo Ranking</h1>
+
+              <div class="grid-icons-row">
+                <div class="grid-icons">
+                  <img src="./images/java.svg" alt="" />
+                  <p class="header4">Java</p>
+                </div>
+              </div>
+              <p class="header7">
+                Github:
+                <a
+                  href="https://github.com/anabildebnath/Primary-School-Book-Distribution-System-Vercel"
+                  target="_blank"
+                  >Solo Ranking's github</a
+                >
+              </p>
+            </div>
           </div>
 
+          <!-- to-do-list -->
           <div class="projects-grid">
-            <a
-              href="https://github.com/anabildebnath/to-do-main"
-              target="_blank"
+            <a href="    https://anabil-todolist.netlify.app/" target="_blank"
               ><img
                 class="projects-img"
                 src="images/to-do-list.png"
@@ -196,13 +403,41 @@
                 srcset=""
             /></a>
 
-            <h1 class="header6">To Do List</h1>
-            <p class="header7">
-              This is a web application for making to-do lists.
-            </p>
+            <div class="projects-non-grid-title">
+              <h1 class="header6">To do list</h1>
+
+              <div class="grid-icons-row">
+                <div class="grid-icons">
+                  <img src="./images/node.svg" alt="" />
+                  <p class="header4">Node</p>
+                </div>
+                <div class="grid-icons">
+                  <img src="./images/express.svg" alt="" />
+                  <p class="header4">Express</p>
+                </div>
+                <div class="grid-icons">
+                  <img src="./images/postgresql.svg" alt="" />
+                  <p class="header4">PostgreSQL</p>
+                </div>
+                <div class="grid-icons">
+                  <img src="./images/supabase.svg" alt="" />
+                  <p class="header4">Supabse</p>
+                </div>
+              </div>
+              <p class="header7">
+                Github:
+                <a
+                  href="https://github.com/anabildebnath/to-do-main"
+                  target="_blank"
+                  >To do list's github</a
+                >
+              </p>
+            </div>
           </div>
         </div>
 
+
+        <!-- ticket booking app flutter -->
         <div class="projects-non-grid">
           <a
             href="https://github.com/anabildebnath/TicketFlutterApp"
@@ -218,11 +453,24 @@
         </div>
 
         <div class="projects-non-grid-title">
-          <h1 class="header6">Ticket Booking App</h1>
+          <h1 class="header6">Ticket Flutter App</h1>
+
+          <div class="grid-icons-row">
+            <div class="grid-icons">
+              <img src="./images/flutter.svg" alt="" />
+              <p class="header4">Flutter</p>
+            </div>
+            
+          </div>
           <p class="header7">
-            This is a mobile application for booking tickets developed using
-            flutter.
+            Github:
+            <a
+              href="https://github.com/anabildebnath/TicketFlutterApp"
+              target="_blank"
+              >Ticket Flutter App's github</a
+            >
           </p>
+          <p class="header7">Just a simple user interface for a ticket booking app using <span>flutter</span></p>
         </div>
 
         <div class="grid-container">
@@ -246,7 +494,9 @@
           </div>
 
           <div class="projects-grid">
-            <a href="https://github.com/anabildebnath" target="_blank"
+            <a
+              href="https://github.com/anabildebnath/Retro-Turtles"
+              target="_blank"
               ><img
                 class="projects-img"
                 src="images/space-game.png"
@@ -254,11 +504,65 @@
                 srcset=""
             /></a>
 
-            <h1 class="header6">Space Shooting Game</h1>
-            <p class="header7">
-              Developed in my 1st year of undergrad by python, a space shooting
-              game where I implemented OOP concepts.
-            </p>
+            <div class="projects-non-grid-title">
+              <h1 class="header6">Retro Turtles</h1>
+
+              <div class="grid-icons-row">
+                <div class="grid-icons">
+                  <img src="./images/python.svg" alt="" />
+                  <p class="header4">Python</p>
+                </div>
+              </div>
+              <p class="header7">
+                Github:
+                <a
+                  href="https://github.com/anabildebnath/Retro-Turtles"
+                  target="_blank"
+                  >Retro Turtle's github</a
+                >
+              </p>
+              <ul>
+                <li>
+                  <p class="header8">
+                    Used
+                    <span style="color: rgb(20, 2, 2)">Python </span>to develop
+                    this space shooting game
+                  </p>
+                </li>
+                <li>
+                  <p class="header8">
+                    Signup/Login is implemented through
+                    <span style="color: rgb(20, 2, 2)">Firebase’s</span>
+                    authentication
+                    <span style="color: rgb(20, 2, 2)">API</span>
+                    integration
+                  </p>
+                </li>
+
+                <li>
+                  <p class="header8">
+                    Implemented Firebase’s authentication system to integrate
+                    <span style="color: rgb(20, 2, 2)">Google</span> and also
+                    <span style="color: rgb(20, 2, 2)">Github</span> login using
+                    GitHub Apps
+                  </p>
+                </li>
+                <li>
+                  <p class="header8">
+                    Structured a
+                    <span style="color: rgb(20, 2, 2)">JSON</span> formatted
+                    file to fetch data using Firebase’s
+                    <span style="color: rgb(20, 2, 2)">Realtime Database</span>
+                    and
+                    <span style="color: rgb(20, 2, 2)">Firestore</span> and
+                    extensive use of
+                    <span style="color: rgb(20, 2, 2)">CSS</span> resulted in
+                    visually captivating UI
+                  </p>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
@@ -291,30 +595,46 @@
                 <img src="/images/tech profile 3.svg" alt="" />
               </div>
             </div>
+
+            <!-- button links at bottom  -->
             <div class="links btn">
               <a href="https://github.com/anabildebnath" target="_blank">
+                <img src="./images/github.svg" alt="" />
                 <button>Github</button></a
               >
               <a
                 href="https://www.linkedin.com/in/anabil-debnath-4956b0219/"
                 target="_blank"
-                ><button>LinkedIn</button></a
               >
-
-              <button onclick="openMail()">Email</button>
+                <img src="./images/linkedin.svg" alt="" />
+                <button>LinkedIn</button></a
+              >
+              <a target="_blank" onclick="openMail()">
+                <img src="./images/gmail.svg" alt="" />
+                <button>Email</button>
+              </a>
 
               <a
                 href="https://www.stopstalk.com/user/profile/anabil_debnath"
                 target="_blank"
-                ><button>StopStalk</button></a
               >
-              <a href="https://codeforces.com/profile/draghima" target="_blank"
-                ><button>Codeforces</button></a
+                <img src="./images/stopstalk.svg" alt="" />
+                <button>StopStalk</button></a
               >
+              <a href="https://codeforces.com/profile/draghima" target="_blank">
+                <img src="./images/codeforces.svg" alt="" />
+                <button>Codeforces</button>
+              </a>
+              <a href="https://leetcode.com/u/DRAGHIMA/" target="_blank">
+                <img src="./images/leetcode.svg" alt="" />
+                <button>Leetcode</button>
+              </a>
               <a
                 href="https://www.instagram.com/anabildebnathabir/"
                 target="_blank"
-                ><button>Instagram</button></a
+              >
+                <img src="./images/instagram.svg" alt="instagram" />
+                <button>Instagram</button></a
               >
             </div>
           </div>
